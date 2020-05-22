@@ -28,6 +28,7 @@
 
   <!--FilteredList items-->
   <div class="suggestions-container"
+       *ngIf="filteredList.length > 0"
        [ngClass]="{ 'is-hidden': isHistoryListVisible, 'is-visible': !isHistoryListVisible}">
     <!--FilteredList heading-->
     <div class="heading" *ngIf="filteredList.length > 0 && heading">
